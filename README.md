@@ -18,3 +18,12 @@ This repository contains:
 Perfect for  **coding rounds**, and **logic strengthening**.
 
 ---
+
+## 👨‍💻 Author
+
+**Suyash Singh**  
+
+🔗 GitHub: [https://github.com/suyXcode](https://github.com/suyXcode)  
+💼 LinkedIn: [https://www.linkedin.com/in/suyxcode/](https://www.linkedin.com/in/suyxcode/)  
+🌐 Portfolio: [https://suyxcode.netlify.app](https://suyxcode.netlify.app)
+
