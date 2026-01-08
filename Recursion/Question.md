@@ -14,6 +14,7 @@ Algorithm
     1. Convert i to string and count ’1’ in each integer string
     2. Add count of ’1’ in each string to the sum, say 'countr'
 --- 
+```
 int countDigitOne(int n)
 {
     int countr = 0;
@@ -23,7 +24,7 @@ int countDigitOne(int n)
     }
     return countr;
 }
-
+```
 ---
 
 # Complexity Analysis
