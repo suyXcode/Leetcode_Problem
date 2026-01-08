@@ -13,9 +13,7 @@
 # Output: 0
  
 
-# Constraints:
 
-# 0 <= n <= 109
 
 
 class Solution(object):
