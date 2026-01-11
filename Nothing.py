@@ -1,2 +1,3 @@
 print("hello leetcode")
-print("Namste S!L")
+print("Namste SQL")
+print("Namste Python")
