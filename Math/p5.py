@@ -17,5 +17,16 @@
 # Output: 0.25000
 # Explanation: 2-2 = 1/22 = 1/4 = 0.25
 
-
+class Solution:
+    def myPow(self, x: float, n: int) -> float:
+        if n < 0:
+            n = -n
+            x = 1/x
+        res = 1
+        while n > 0:
+            if n & 1:
+                res *= x
+            x *= x
+            n = n >> 1
+        return res
 
