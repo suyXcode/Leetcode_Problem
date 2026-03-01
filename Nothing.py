@@ -1,5 +1,4 @@
 print("hello leetcode")
-print("Namste SQL")
 print("Namste Python")
 print("Namste Suyash ")
 print("Hello Suyxcode")
