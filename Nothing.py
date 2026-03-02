@@ -1,4 +1,5 @@
 print("hello leetcode")
+print("Nothing")
 print("Namste Python")
 print("Namste Suyash ")
 print("Hello Suyxcode")
