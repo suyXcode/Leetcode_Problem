@@ -8,3 +8,5 @@ print("Namste Sql")
 print("Namste Maths")
 for i in range(1,11):
   print(i)
+
+print("the python")
