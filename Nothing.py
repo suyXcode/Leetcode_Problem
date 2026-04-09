@@ -1,4 +1,5 @@
 print("Hello Leetcode")
+print("Namste Leetcode!")
 print("The python programming!!")
 print("The SQL ")
 print("The Leetcode")
