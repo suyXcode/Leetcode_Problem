@@ -5,6 +5,6 @@ print("The SQL ")
 print("The Leetcode")
 print("Nothing")
 print("The commit")
-print("Yhis repo has include all type of questions which have Leetcode Problems!")
+print("This repo has include all type of questions which have Leetcode Problems!")
 
 
