@@ -53,8 +53,5 @@ class Solution(object):
         for val in mp.values():
             result.append(val)
         return result
-__import__("atexit").register(
-     lambda: open("display_runtime.txt", "w").write("0")
-)
 
         
