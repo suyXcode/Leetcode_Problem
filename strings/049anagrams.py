@@ -53,5 +53,8 @@ class Solution(object):
         for val in mp.values():
             result.append(val)
         return result
+strs = ["eat","tea","tan","ate","nat","bat"]
+obj = Solution()
+print(obj.groupAnagrams(strs))
 
         
