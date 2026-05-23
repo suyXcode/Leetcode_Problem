@@ -6,8 +6,4 @@ print("The Leetcode")
 print("Nothing")
 print("The commit")
 print("This repo has include all type of questions which have Leetcode Problems!")
-print("---------------------------")
-print("Exam")
-print("---------------------------")
-print("9 may 2026 Cloud Computing")
-print("Completed"
+
