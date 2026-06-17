@@ -14,9 +14,7 @@ class Solution:
                 cur = min(INF, cur * 2)
             elif ch == '%':
                 pass
-
             lengths.append(cur)
-
         if k >= lengths[-1]:
             return '.'
 
