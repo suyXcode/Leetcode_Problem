@@ -9,3 +9,5 @@ print("This repo has include all type of questions which have Leetcode Problems!
 print("All type Questions")
 print("Leetcode")
 print("SQL")
+print("start Aiml")
+print("AI")
