@@ -3,48 +3,41 @@ import heapq
 
 class Solution:
     def assignTasks(self, servers, tasks):
-        n = len(servers)
-        m = len(tasks)
-
-        # Available servers: (weight, index)
-        available = [
-            (weight, i)
-            for i, weight in enumerate(servers)
-        ]
+        available = [(weight, i) for i, weight in enumerate(servers)]
         heapq.heapify(available)
 
-        # Busy servers: (finish_time, weight, index)
         busy = []
 
-        ans = [0] * m
+        ans = []
+        time = 0
 
-        for j in range(m):
+        for j, task in enumerate(tasks):
+
+            time = max(time, j)
 
             # Release all servers that have finished
-            while busy and busy[0][0] <= j:
+            while busy and busy[0][0] <= time:
                 finish, weight, idx = heapq.heappop(busy)
                 heapq.heappush(available, (weight, idx))
 
-            # If no server is free, wait for the earliest one
+            # If no server is free, wait for the earliest completion
             if not available:
-                current_time = busy[0][0]
+                time = busy[0][0]
 
-                # Release all servers free at current_time
-                while busy and busy[0][0] <= current_time:
+                # Release every server available at this time
+                while busy and busy[0][0] <= time:
                     finish, weight, idx = heapq.heappop(busy)
                     heapq.heappush(available, (weight, idx))
 
-            # Select the best available server
+            # Choose the server with minimum weight and index
             weight, idx = heapq.heappop(available)
 
-            ans[j] = idx
+            ans.append(idx)
 
-            # Assign task and calculate finish time
-            finish_time = max(j, current_time if not available and False else j) + tasks[j]
-
+            # Schedule the task
             heapq.heappush(
                 busy,
-                (finish_time, weight, idx)
+                (time + task, weight, idx)
             )
 
         return ans
