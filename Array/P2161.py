@@ -4,6 +4,7 @@ class Solution:
         equal = []
         greater = []
 
+        
         for num in nums:
             if num < pivot:
                 smaller.append(num)
